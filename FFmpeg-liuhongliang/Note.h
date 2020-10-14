@@ -218,20 +218,27 @@
 
 
 /*
- git init
- git add README.md
- git commit -m "first commit"
- git branch -M master
- git remote add origin https://github.com/aliuhongliang/liuhongliang.git
- git push -u origin master
- 
- 
- 如何使用GitHub LFS让git处理大文件
+ 如果有大文件提前安装GitHub LFS
  brew install git-lfs
  
- 进入本地仓库目录初始化LFS    git lfs install
- git lfs track "*.a" // [引号里面是具体的问题名]
- git add .gitattributes
- git commit -m "update"
- git push origin master  //  master 分支名
+ git init
+ git remote add origin https://github.com/aliuhongliang/liuhongliang.git
+ 
+ 有大文件 git lfs track "*.a" // [引号里面是具体的问题名]
+        git add .gitattributes
+ 
+ git add .
+ 
+ git commit -m "first commit"
+ 
+ git branch -M master
+ 
+ git push -u origin master
+ 
+ 如果失败了可能网络原因，多push几次
+ 【错误：
+ Post "https://lfs.github.com/aliuhongliang/liuhongliang6177/objects/ad395435e4e6374b46a7bb7530ac5fd0c301974941829b733aacc9205c51650d/verify": dial tcp 13.250.168.23:443: connect: connection refused
+ Uploading LFS objects:  86% (6/7), 191 MB | 510 KB/s, done.
+ error: 推送一些引用到 'https://github.com/aliuhongliang/liuhongliang6177.git' 失败
+ 】
  */
