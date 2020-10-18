@@ -242,3 +242,7 @@
  error: 推送一些引用到 'https://github.com/aliuhongliang/liuhongliang6177.git' 失败
  】
  */
+
+/*
+    下载有lfs 管理的包时，需要执行 git lfs pull
+ */

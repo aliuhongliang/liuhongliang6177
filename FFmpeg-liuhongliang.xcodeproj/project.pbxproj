@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C56AC442253BE103007FA53B /* LLPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC441253BE103007FA53B /* LLPlayer.m */; };
+		C56AC452253BE424007FA53B /* LLOpenFileThread.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC451253BE424007FA53B /* LLOpenFileThread.m */; };
+		C56AC45C253BEA7C007FA53B /* LLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC45B253BEA7C007FA53B /* LLReader.m */; };
+		C56AC477253BEBF8007FA53B /* LLAVFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC476253BEBF8007FA53B /* LLAVFrame.m */; };
+		C56AC480253BEC0A007FA53B /* LLAVPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC47F253BEC0A007FA53B /* LLAVPacket.m */; };
+		C56AC491253BF8A0007FA53B /* liu_ffmpeg1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C56AC48F253BF8A0007FA53B /* liu_ffmpeg1.mp4 */; };
+		C56AC492253BF8A0007FA53B /* liu_ffmpeg.mov in Resources */ = {isa = PBXBuildFile; fileRef = C56AC490253BF8A0007FA53B /* liu_ffmpeg.mov */; };
+		C56AC498253BFA3E007FA53B /* LLDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC497253BFA3E007FA53B /* LLDecoder.m */; };
+		C56AC49E253BFB69007FA53B /* LLAVStream.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC49D253BFB69007FA53B /* LLAVStream.m */; };
+		C56AC4B3253C1AD0007FA53B /* LLQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC4B2253C1AD0007FA53B /* LLQueue.m */; };
 		C58392F025357E1000F459FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C58392EF25357E1000F459FE /* AppDelegate.m */; };
 		C58392FB25357E1100F459FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C58392FA25357E1100F459FE /* Assets.xcassets */; };
 		C58392FE25357E1100F459FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58392FC25357E1100F459FE /* LaunchScreen.storyboard */; };
@@ -54,6 +64,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C56AC437253BE030007FA53B /* LLPlayerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLPlayerHeader.h; sourceTree = "<group>"; };
+		C56AC440253BE103007FA53B /* LLPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLPlayer.h; sourceTree = "<group>"; };
+		C56AC441253BE103007FA53B /* LLPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLPlayer.m; sourceTree = "<group>"; };
+		C56AC450253BE424007FA53B /* LLOpenFileThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLOpenFileThread.h; sourceTree = "<group>"; };
+		C56AC451253BE424007FA53B /* LLOpenFileThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLOpenFileThread.m; sourceTree = "<group>"; };
+		C56AC45A253BEA7C007FA53B /* LLReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLReader.h; sourceTree = "<group>"; };
+		C56AC45B253BEA7C007FA53B /* LLReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLReader.m; sourceTree = "<group>"; };
+		C56AC475253BEBF8007FA53B /* LLAVFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLAVFrame.h; sourceTree = "<group>"; };
+		C56AC476253BEBF8007FA53B /* LLAVFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLAVFrame.m; sourceTree = "<group>"; };
+		C56AC47E253BEC0A007FA53B /* LLAVPacket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLAVPacket.h; sourceTree = "<group>"; };
+		C56AC47F253BEC0A007FA53B /* LLAVPacket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLAVPacket.m; sourceTree = "<group>"; };
+		C56AC48F253BF8A0007FA53B /* liu_ffmpeg1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = liu_ffmpeg1.mp4; sourceTree = "<group>"; };
+		C56AC490253BF8A0007FA53B /* liu_ffmpeg.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = liu_ffmpeg.mov; sourceTree = "<group>"; };
+		C56AC496253BFA3E007FA53B /* LLDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDecoder.h; sourceTree = "<group>"; };
+		C56AC497253BFA3E007FA53B /* LLDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLDecoder.m; sourceTree = "<group>"; };
+		C56AC49C253BFB69007FA53B /* LLAVStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLAVStream.h; sourceTree = "<group>"; };
+		C56AC49D253BFB69007FA53B /* LLAVStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLAVStream.m; sourceTree = "<group>"; };
+		C56AC4B1253C1AD0007FA53B /* LLQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLQueue.h; sourceTree = "<group>"; };
+		C56AC4B2253C1AD0007FA53B /* LLQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLQueue.m; sourceTree = "<group>"; };
 		C58392EB25357E1000F459FE /* FFmpeg-liuhongliang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FFmpeg-liuhongliang.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58392EE25357E1000F459FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C58392EF25357E1000F459FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -247,6 +276,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C56AC41B253BDD9E007FA53B /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				C56AC44F253BE424007FA53B /* Thread */,
+				C56AC459253BE95C007FA53B /* LLAV */,
+				C56AC437253BE030007FA53B /* LLPlayerHeader.h */,
+				C56AC440253BE103007FA53B /* LLPlayer.h */,
+				C56AC441253BE103007FA53B /* LLPlayer.m */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		C56AC44F253BE424007FA53B /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				C56AC450253BE424007FA53B /* LLOpenFileThread.h */,
+				C56AC451253BE424007FA53B /* LLOpenFileThread.m */,
+				C56AC4B1253C1AD0007FA53B /* LLQueue.h */,
+				C56AC4B2253C1AD0007FA53B /* LLQueue.m */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
+		C56AC459253BE95C007FA53B /* LLAV */ = {
+			isa = PBXGroup;
+			children = (
+				C56AC45A253BEA7C007FA53B /* LLReader.h */,
+				C56AC45B253BEA7C007FA53B /* LLReader.m */,
+				C56AC496253BFA3E007FA53B /* LLDecoder.h */,
+				C56AC497253BFA3E007FA53B /* LLDecoder.m */,
+				C56AC49C253BFB69007FA53B /* LLAVStream.h */,
+				C56AC49D253BFB69007FA53B /* LLAVStream.m */,
+				C56AC47E253BEC0A007FA53B /* LLAVPacket.h */,
+				C56AC47F253BEC0A007FA53B /* LLAVPacket.m */,
+				C56AC475253BEBF8007FA53B /* LLAVFrame.h */,
+				C56AC476253BEBF8007FA53B /* LLAVFrame.m */,
+			);
+			path = LLAV;
+			sourceTree = "<group>";
+		};
 		C58392E225357E1000F459FE = {
 			isa = PBXGroup;
 			children = (
@@ -271,9 +340,12 @@
 		C58392ED25357E1000F459FE /* FFmpeg-liuhongliang */ = {
 			isa = PBXGroup;
 			children = (
+				C56AC490253BF8A0007FA53B /* liu_ffmpeg.mov */,
+				C56AC48F253BF8A0007FA53B /* liu_ffmpeg1.mp4 */,
 				C58392EE25357E1000F459FE /* AppDelegate.h */,
 				C58392EF25357E1000F459FE /* AppDelegate.m */,
 				C5F8D39F2536CB0C00AC9171 /* Note.h */,
+				C56AC41B253BDD9E007FA53B /* Player */,
 				C5F8D1EA25369C0900AC9171 /* FFmpeg-iOS */,
 				C583932325357E5200F459FE /* HomeViewController.h */,
 				C583932425357E5200F459FE /* HomeViewController.mm */,
@@ -600,6 +672,7 @@
 				TargetAttributes = {
 					C58392EA25357E1000F459FE = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1200;
 					};
 					C583930525357E1100F459FE = {
 						CreatedOnToolsVersion = 11.4;
@@ -636,8 +709,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C56AC492253BF8A0007FA53B /* liu_ffmpeg.mov in Resources */,
 				C58392FE25357E1100F459FE /* LaunchScreen.storyboard in Resources */,
 				C58392FB25357E1100F459FE /* Assets.xcassets in Resources */,
+				C56AC491253BF8A0007FA53B /* liu_ffmpeg1.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,12 +739,20 @@
 			files = (
 				C5F8D3BB2536E36000AC9171 /* ffmpeg_opt.c in Sources */,
 				C5F8D3BE2536E36000AC9171 /* cmdutils.c in Sources */,
+				C56AC49E253BFB69007FA53B /* LLAVStream.m in Sources */,
+				C56AC4B3253C1AD0007FA53B /* LLQueue.m in Sources */,
+				C56AC480253BEC0A007FA53B /* LLAVPacket.m in Sources */,
+				C56AC498253BFA3E007FA53B /* LLDecoder.m in Sources */,
 				C5F8D3BC2536E36000AC9171 /* ffmpeg_filter.c in Sources */,
 				C58392F025357E1000F459FE /* AppDelegate.m in Sources */,
+				C56AC45C253BEA7C007FA53B /* LLReader.m in Sources */,
 				C5F8D3BD2536E36000AC9171 /* ffmpeg_hw.c in Sources */,
 				C583930125357E1100F459FE /* main.m in Sources */,
 				C5F8D3BF2536E36000AC9171 /* ffmpeg.c in Sources */,
+				C56AC477253BEBF8007FA53B /* LLAVFrame.m in Sources */,
 				C5F8D3C02536E36000AC9171 /* ffmpeg_videotoolbox.c in Sources */,
+				C56AC452253BE424007FA53B /* LLOpenFileThread.m in Sources */,
+				C56AC442253BE103007FA53B /* LLPlayer.m in Sources */,
 				C583932525357E5200F459FE /* HomeViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -831,8 +914,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 525V9JN529;
+				DEVELOPMENT_TEAM = R24Z27K86A;
 				GCC_INPUT_FILETYPE = automatic;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/FFmpeg-liuhongliang/FFmpeg-iOS/include";
 				INFOPLIST_FILE = "FFmpeg-liuhongliang/Info.plist";
@@ -846,8 +930,11 @@
 					"$(PROJECT_DIR)/FFmpeg-liuhongliang/FFmpeg-iOS/lib",
 					"$(PROJECT_DIR)/FFmpeg-liuhongliang/FFmpeg-iOS/include",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhongwei.aiweibaby.FFmpeg-liuhongliang";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhongwei.aiweibaby.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FFmpeg-liuhongliang/Player/FFmpeg-liuhongliang-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYSTEM_HEADER_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -857,8 +944,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 525V9JN529;
+				DEVELOPMENT_TEAM = R24Z27K86A;
 				GCC_INPUT_FILETYPE = automatic;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/FFmpeg-liuhongliang/FFmpeg-iOS/include";
 				INFOPLIST_FILE = "FFmpeg-liuhongliang/Info.plist";
@@ -872,8 +960,10 @@
 					"$(PROJECT_DIR)/FFmpeg-liuhongliang/FFmpeg-iOS/lib",
 					"$(PROJECT_DIR)/FFmpeg-liuhongliang/FFmpeg-iOS/include",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.zhongwei.aiweibaby.FFmpeg-liuhongliang";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhongwei.aiweibaby.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FFmpeg-liuhongliang/Player/FFmpeg-liuhongliang-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				SYSTEM_HEADER_SEARCH_PATHS = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
