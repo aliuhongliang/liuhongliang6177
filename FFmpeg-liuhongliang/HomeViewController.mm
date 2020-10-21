@@ -33,13 +33,25 @@ int ffmpeg_main(int argc, char * argv[]);
     
     self.view.backgroundColor = [UIColor redColor];
     
-    LLOpenFileThread *thread = [[LLOpenFileThread alloc] init];
-    [thread start];
-    
     NSString *str = [[NSBundle mainBundle] pathForResource:@"liu_ffmpeg" ofType:@"mov"];
     
     _player = [LLPlayer new];
     [_player open:str];
+    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [_player stop];
+//        
+//    });
+//    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [_player open:str];
+//        
+//    });
+//    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [_player stop];
+//        
+//    });
     
 //    avformat_network_init();
 //

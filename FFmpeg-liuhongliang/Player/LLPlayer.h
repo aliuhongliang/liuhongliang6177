@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface LLPlayer : NSObject
-- (void)open:(NSString *)url;
+- (int)open:(NSString *)url;
+- (int)play;
+- (int)pause;
+- (int)stop;
 @end
 

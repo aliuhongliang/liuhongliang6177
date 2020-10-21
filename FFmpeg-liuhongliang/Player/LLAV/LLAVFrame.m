@@ -20,6 +20,10 @@
     return self;
 }
 
+- (NSTimeInterval)getPts {
+    return self.ptsSec;
+}
+
 - (int)getW {
     return _frame->width;
 }

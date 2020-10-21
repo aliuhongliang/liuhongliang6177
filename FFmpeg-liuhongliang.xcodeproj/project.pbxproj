@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C56AC442253BE103007FA53B /* LLPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC441253BE103007FA53B /* LLPlayer.m */; };
-		C56AC452253BE424007FA53B /* LLOpenFileThread.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC451253BE424007FA53B /* LLOpenFileThread.m */; };
 		C56AC45C253BEA7C007FA53B /* LLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC45B253BEA7C007FA53B /* LLReader.m */; };
 		C56AC477253BEBF8007FA53B /* LLAVFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC476253BEBF8007FA53B /* LLAVFrame.m */; };
 		C56AC480253BEC0A007FA53B /* LLAVPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC47F253BEC0A007FA53B /* LLAVPacket.m */; };
@@ -17,6 +16,10 @@
 		C56AC498253BFA3E007FA53B /* LLDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC497253BFA3E007FA53B /* LLDecoder.m */; };
 		C56AC49E253BFB69007FA53B /* LLAVStream.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC49D253BFB69007FA53B /* LLAVStream.m */; };
 		C56AC4B3253C1AD0007FA53B /* LLQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC4B2253C1AD0007FA53B /* LLQueue.m */; };
+		C56AC4BC253C4715007FA53B /* LLThread.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC4BB253C4715007FA53B /* LLThread.m */; };
+		C56AC4C2253C4951007FA53B /* LLReaderThread.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC4C1253C4951007FA53B /* LLReaderThread.m */; };
+		C56AC4C8253C52CE007FA53B /* LLDecodeThread.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC4C7253C52CE007FA53B /* LLDecodeThread.m */; };
+		C56AC4CE25405930007FA53B /* LLPlayerControlThread.m in Sources */ = {isa = PBXBuildFile; fileRef = C56AC4CD25405930007FA53B /* LLPlayerControlThread.m */; };
 		C58392F025357E1000F459FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C58392EF25357E1000F459FE /* AppDelegate.m */; };
 		C58392FB25357E1100F459FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C58392FA25357E1100F459FE /* Assets.xcassets */; };
 		C58392FE25357E1100F459FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58392FC25357E1100F459FE /* LaunchScreen.storyboard */; };
@@ -67,8 +70,6 @@
 		C56AC437253BE030007FA53B /* LLPlayerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLPlayerHeader.h; sourceTree = "<group>"; };
 		C56AC440253BE103007FA53B /* LLPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLPlayer.h; sourceTree = "<group>"; };
 		C56AC441253BE103007FA53B /* LLPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLPlayer.m; sourceTree = "<group>"; };
-		C56AC450253BE424007FA53B /* LLOpenFileThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLOpenFileThread.h; sourceTree = "<group>"; };
-		C56AC451253BE424007FA53B /* LLOpenFileThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLOpenFileThread.m; sourceTree = "<group>"; };
 		C56AC45A253BEA7C007FA53B /* LLReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLReader.h; sourceTree = "<group>"; };
 		C56AC45B253BEA7C007FA53B /* LLReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLReader.m; sourceTree = "<group>"; };
 		C56AC475253BEBF8007FA53B /* LLAVFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLAVFrame.h; sourceTree = "<group>"; };
@@ -83,6 +84,14 @@
 		C56AC49D253BFB69007FA53B /* LLAVStream.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLAVStream.m; sourceTree = "<group>"; };
 		C56AC4B1253C1AD0007FA53B /* LLQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLQueue.h; sourceTree = "<group>"; };
 		C56AC4B2253C1AD0007FA53B /* LLQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLQueue.m; sourceTree = "<group>"; };
+		C56AC4BA253C4715007FA53B /* LLThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLThread.h; sourceTree = "<group>"; };
+		C56AC4BB253C4715007FA53B /* LLThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLThread.m; sourceTree = "<group>"; };
+		C56AC4C0253C4951007FA53B /* LLReaderThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLReaderThread.h; sourceTree = "<group>"; };
+		C56AC4C1253C4951007FA53B /* LLReaderThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLReaderThread.m; sourceTree = "<group>"; };
+		C56AC4C6253C52CE007FA53B /* LLDecodeThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDecodeThread.h; sourceTree = "<group>"; };
+		C56AC4C7253C52CE007FA53B /* LLDecodeThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLDecodeThread.m; sourceTree = "<group>"; };
+		C56AC4CC25405930007FA53B /* LLPlayerControlThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLPlayerControlThread.h; sourceTree = "<group>"; };
+		C56AC4CD25405930007FA53B /* LLPlayerControlThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLPlayerControlThread.m; sourceTree = "<group>"; };
 		C58392EB25357E1000F459FE /* FFmpeg-liuhongliang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FFmpeg-liuhongliang.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58392EE25357E1000F459FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C58392EF25357E1000F459FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -291,10 +300,16 @@
 		C56AC44F253BE424007FA53B /* Thread */ = {
 			isa = PBXGroup;
 			children = (
-				C56AC450253BE424007FA53B /* LLOpenFileThread.h */,
-				C56AC451253BE424007FA53B /* LLOpenFileThread.m */,
 				C56AC4B1253C1AD0007FA53B /* LLQueue.h */,
 				C56AC4B2253C1AD0007FA53B /* LLQueue.m */,
+				C56AC4BA253C4715007FA53B /* LLThread.h */,
+				C56AC4BB253C4715007FA53B /* LLThread.m */,
+				C56AC4C0253C4951007FA53B /* LLReaderThread.h */,
+				C56AC4C1253C4951007FA53B /* LLReaderThread.m */,
+				C56AC4C6253C52CE007FA53B /* LLDecodeThread.h */,
+				C56AC4C7253C52CE007FA53B /* LLDecodeThread.m */,
+				C56AC4CC25405930007FA53B /* LLPlayerControlThread.h */,
+				C56AC4CD25405930007FA53B /* LLPlayerControlThread.m */,
 			);
 			path = Thread;
 			sourceTree = "<group>";
@@ -737,12 +752,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C56AC4C2253C4951007FA53B /* LLReaderThread.m in Sources */,
 				C5F8D3BB2536E36000AC9171 /* ffmpeg_opt.c in Sources */,
 				C5F8D3BE2536E36000AC9171 /* cmdutils.c in Sources */,
 				C56AC49E253BFB69007FA53B /* LLAVStream.m in Sources */,
 				C56AC4B3253C1AD0007FA53B /* LLQueue.m in Sources */,
 				C56AC480253BEC0A007FA53B /* LLAVPacket.m in Sources */,
+				C56AC4C8253C52CE007FA53B /* LLDecodeThread.m in Sources */,
 				C56AC498253BFA3E007FA53B /* LLDecoder.m in Sources */,
+				C56AC4CE25405930007FA53B /* LLPlayerControlThread.m in Sources */,
 				C5F8D3BC2536E36000AC9171 /* ffmpeg_filter.c in Sources */,
 				C58392F025357E1000F459FE /* AppDelegate.m in Sources */,
 				C56AC45C253BEA7C007FA53B /* LLReader.m in Sources */,
@@ -751,7 +769,7 @@
 				C5F8D3BF2536E36000AC9171 /* ffmpeg.c in Sources */,
 				C56AC477253BEBF8007FA53B /* LLAVFrame.m in Sources */,
 				C5F8D3C02536E36000AC9171 /* ffmpeg_videotoolbox.c in Sources */,
-				C56AC452253BE424007FA53B /* LLOpenFileThread.m in Sources */,
+				C56AC4BC253C4715007FA53B /* LLThread.m in Sources */,
 				C56AC442253BE103007FA53B /* LLPlayer.m in Sources */,
 				C583932525357E5200F459FE /* HomeViewController.mm in Sources */,
 			);
@@ -930,7 +948,7 @@
 					"$(PROJECT_DIR)/FFmpeg-liuhongliang/FFmpeg-iOS/lib",
 					"$(PROJECT_DIR)/FFmpeg-liuhongliang/FFmpeg-iOS/include",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhongwei.aiweibaby.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhongwei.aiweibaby.com1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FFmpeg-liuhongliang/Player/FFmpeg-liuhongliang-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -960,7 +978,7 @@
 					"$(PROJECT_DIR)/FFmpeg-liuhongliang/FFmpeg-iOS/lib",
 					"$(PROJECT_DIR)/FFmpeg-liuhongliang/FFmpeg-iOS/include",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhongwei.aiweibaby.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhongwei.aiweibaby.com1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FFmpeg-liuhongliang/Player/FFmpeg-liuhongliang-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

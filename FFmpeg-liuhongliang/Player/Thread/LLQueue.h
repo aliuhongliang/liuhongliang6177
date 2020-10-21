@@ -10,7 +10,8 @@
 
 @interface LLQueue : NSObject
 - (int)push:(id)data;
-- (int)pop:(id)data;
+//- (int)pop:(id *)data;
+- (id)pop;
 - (int)popWithLength:(NSInteger)length;
 - (int)flush;
 - (int)size;

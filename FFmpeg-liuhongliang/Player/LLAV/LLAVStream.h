@@ -11,6 +11,8 @@
 
 @interface LLAVStream : NSObject
 @property (nonatomic, assign) NSInteger streamIndex;
+@property (nonatomic, assign) NSTimeInterval timebaseNum;
+@property (nonatomic, assign) NSTimeInterval timebaseDen;
 @property (nonatomic) AVCodecParameters *codecpar;
 @end
 

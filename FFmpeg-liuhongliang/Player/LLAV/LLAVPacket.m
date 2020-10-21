@@ -27,7 +27,6 @@
 }
 
 - (void)dealloc {
-    NSLog(@"----packet delloc");
     if (_pkt) {
         av_packet_free(&_pkt);
         _pkt = nil;

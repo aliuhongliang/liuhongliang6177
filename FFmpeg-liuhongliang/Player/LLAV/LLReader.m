@@ -27,6 +27,8 @@
 - (int)getStream:(LLAVStream *)stream streamId:(NSInteger)streamId {
     AVStream *ffm_Stream = _formatCtx->streams[streamId];
     stream.streamIndex = ffm_Stream->index;
+    stream.timebaseDen = ffm_Stream->time_base.den;
+    stream.timebaseNum = ffm_Stream->time_base.num;
     int ret = avcodec_parameters_copy(stream.codecpar, ffm_Stream->codecpar);
     return ret;
 }

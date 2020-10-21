@@ -10,6 +10,8 @@
 
 @interface LLDecoder ()
 @property (nonatomic) AVCodecContext *codexCtx;
+@property (nonatomic, assign) NSTimeInterval timebaseNum;
+@property (nonatomic, assign) NSTimeInterval timebaseDen;
 @end
 
 @implementation LLDecoder
@@ -24,6 +26,9 @@
 }
 
 - (int)initialDecoder:(LLAVStream *)stream {
+    self.timebaseNum = stream.timebaseNum;
+    self.timebaseDen = stream.timebaseDen;
+    
     avcodec_parameters_to_context(_codexCtx, stream.codecpar);
     AVCodec *codec = avcodec_find_decoder(_codexCtx->codec_id);
     int ret = avcodec_open2(_codexCtx, codec, NULL);
@@ -48,6 +53,9 @@
 
 - (int)receiveFrame:(LLAVFrame *)frame {
     int ret = avcodec_receive_frame(_codexCtx, frame.frame);
+    if (!ret) {
+        frame.ptsSec = (frame.frame->pts * self.timebaseNum / self.timebaseDen);
+    }
     return ret;
 }
 

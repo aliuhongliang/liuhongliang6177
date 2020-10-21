@@ -11,6 +11,7 @@
 
 @interface LLAVFrame : NSObject
 @property (nonatomic) AVFrame *frame;
+@property (nonatomic, assign) NSTimeInterval ptsSec;
 
 - (void)printVideoFrame;
 - (void)printAudioFrame;
@@ -20,5 +21,6 @@
 - (int)getYUV_V:(char *)YUV_v;
 - (int)getW;
 - (int)getH;
+- (NSTimeInterval)getPts;
 @end
 

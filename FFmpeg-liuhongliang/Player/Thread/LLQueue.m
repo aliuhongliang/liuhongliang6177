@@ -55,19 +55,32 @@
     return 0;
 }
 
-- (int)pop:(id)data {
+- (id)pop {
     [self.lock lock];
     int size = [self size];
     if (size <= 0) {
         [self.lock unlock];
-        return -1;
+        return nil;
     }
-    
-    data = self.dataArray.firstObject;
+    id data = self.dataArray.firstObject;
     [self.dataArray removeObjectAtIndex:0];
     [self.lock unlock];
-    return 0;
+    return data;
 }
+
+//- (int)pop:(id *)data {
+//    [self.lock lock];
+//    int size = [self size];
+//    if (size <= 0) {
+//        [self.lock unlock];
+//        return -1;
+//    }
+//
+//    *data = (self.dataArray.firstObject);
+//    [self.dataArray removeObjectAtIndex:0];
+//    [self.lock unlock];
+//    return 0;
+//}
 
 - (int)size {
     return (int)self.dataArray.count;
